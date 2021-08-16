@@ -20,7 +20,6 @@ const countAllValuesInArray = (allItems) => {
     } else {
       allValueCounts[allItems[i]] = 1;
     }
-
   }
 
   // return all valueCounts
@@ -33,6 +32,16 @@ const countOnly = (allItems, itemsToCount) => {
 
   // init object
   let totalItems = {};
+
+  // check if allItems is Array
+  if(!Array.isArray(allItems)) {
+    return totalItems;
+  }
+
+  // check if itemsToCount is object
+  if(!(!Array.isArray(itemsToCount) && typeof(itemsToCount) === 'object')){
+    return totalItems;
+  }
 
   // loop all prop of itemsToCount
   for (const key in itemsToCount) {
