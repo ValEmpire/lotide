@@ -2,8 +2,10 @@ const assert = require('chai').assert;
 const middle   = require('../middle');
 
 describe("#middle", () => {
-  it("returns empty array for arrays with less than or equal to 1", () => {
+  it("returns empty array for arrays with less than or equal to 2", () => {
+    assert.deepEqual(middle([1,2]), []);
     assert.deepEqual(middle([1]), []);
+    assert.deepEqual(middle([]), []);
   });
 
   it("returns an array with single middle element for arrays with odd number of elements ", () => {

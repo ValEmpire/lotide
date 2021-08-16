@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@valempire/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "My mini clone of lodash.",
+  "main": "index.js",
   "directories": {
     "test": "mocha"
   },
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/ValEmpire/lotide.git"
   },
-  "author": "",
+  "author": "Arcival Palma",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ValEmpire/lotide/issues"
